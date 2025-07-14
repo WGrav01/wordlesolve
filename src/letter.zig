@@ -1,6 +1,6 @@
 const words = @import("words.zig").words;
 
-pub const Letters = struct{
+pub const Letters = struct {
     letter: [26]u8, // The letter itself
     first: [26]u32, // How many times it appears as the first letter in a word
     second: [26]u32, // How many times it appears as the second letter in a word
@@ -9,7 +9,7 @@ pub const Letters = struct{
     fifth: [26]u32, // How many times it appears as the fifth letter in a word
 };
 
-pub fn getFirstLetterCount() Letters {
+pub fn getInitalLetterCount() Letters {
     var letters = Letters{
         .letter = undefined,
         .first = [_]u32{0} ** 26,
