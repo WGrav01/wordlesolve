@@ -8,7 +8,7 @@ pub const Letters = struct {
 pub fn getInitialLetterCount() Letters {
     var letters = Letters{
         .letter = undefined,
-        .frequency = [26][5]u32{0} ** 26,
+        .frequency = [_][5]u32{[_]u32{0} ** 5} ** 26, // Init array with zeroes
     };
 
     for (0..letters.letter.len) |i| {
