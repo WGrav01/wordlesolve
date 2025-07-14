@@ -9,7 +9,7 @@ pub const Letters = struct {
     fifth: [26]u32, // How many times it appears as the fifth letter in a word
 };
 
-pub fn getInitalLetterCount() Letters {
+pub fn getInitialLetterCount() Letters {
     var letters = Letters{
         .letter = undefined,
         .first = [_]u32{0} ** 26,
